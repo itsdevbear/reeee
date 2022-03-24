@@ -4,7 +4,7 @@ package go_bonga.bonga.v1beta1;
 option go_package = "github.com/berachain/go-bonga/x/bonga/types";
 
 import "gogoproto/gogo.proto";
-import "cosmos/staking/v1beta1/staking.proto";
+import "bonga/v1beta1/staking.proto";
 
 // GenesisState defines the staking module's genesis state.
 message GenesisState {

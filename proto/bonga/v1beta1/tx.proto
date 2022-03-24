@@ -7,7 +7,7 @@ import "gogoproto/gogo.proto";
 
 import "cosmos_proto/cosmos.proto";
 import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/staking/v1beta1/staking.proto";
+import "bonga/v1beta1/staking.proto";
 
 option go_package = "github.com/berachain/go-bonga/x/bonga/types";
 
