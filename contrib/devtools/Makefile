@@ -114,7 +114,7 @@ buf: buf-stamp
 
 buf-stamp:
 	@echo "Installing buf..."
-	@curl -sSL \
+	@sudo curl -sSL \
     "https://github.com/bufbuild/buf/releases/download/v${BUF_VERSION}/buf-${UNAME_S}-${UNAME_M}" \
     -o "${BIN}/buf" && \
 	chmod +x "${BIN}/buf"
