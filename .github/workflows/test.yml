@@ -1,5 +1,11 @@
-name: TestUnit
-on: [pull_request]
+
+   
+name: Test
+on:
+  pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   test-unit:
