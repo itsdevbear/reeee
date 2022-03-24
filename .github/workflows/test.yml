@@ -12,14 +12,12 @@ jobs:
     name: Test Units
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v1
-      - name: Run unit tests
-        uses: cedrickring/golang-action/go1.16@1.7.0
-        env:
-          GO111MODULE: "on"
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2.1.4
         with:
-          args: make test-unit
+          go-version: '^1.18'
+      - name: Run Unit Tests
+        run:  make unit-test
   # test-sim:
   #   name: Test Simulations
   #   runs-on: ubuntu-latest
