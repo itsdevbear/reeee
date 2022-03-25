@@ -8,12 +8,11 @@ import (
 
 	"github.com/gorilla/mux"
 
+	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	clientrest "github.com/cosmos/cosmos-sdk/client/rest"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-
-	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 func registerQueryRoutes(clientCtx client.Context, r *mux.Router) {
@@ -154,7 +153,7 @@ func delegatorTxsHandlerFn(clientCtx client.Context) http.HandlerFunc {
 
 		// For each case, we search txs for both:
 		// - legacy messages: their Type() is a custom string, e.g. "delegate"
-		// - service Msgs: their Type() is their FQ method name, e.g. "/cosmos.bonga.v1beta1.MsgDelegate"
+		// - service Msgs: their Type() is their FQ method name, e.g. "/bera.bonga.v1beta1.MsgDelegate"
 		// and we combine the results.
 		switch {
 		case isBondTx:

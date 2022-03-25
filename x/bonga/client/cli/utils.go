@@ -3,9 +3,8 @@ package cli
 import (
 	"errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-
 	"github.com/berachain/go-bonga/x/bonga/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 func buildCommissionRates(rateStr, maxRateStr, maxChangeRateStr string) (commission types.CommissionRates, err error) {

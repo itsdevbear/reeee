@@ -12,6 +12,8 @@ import (
 	"github.com/tendermint/tendermint/proto/tendermint/crypto"
 	"github.com/tendermint/tendermint/rpc/client/http"
 
+	"github.com/berachain/go-bonga/x/bonga/client/cli"
+	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/crypto/hd"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
@@ -21,9 +23,6 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/client/testutil"
-
-	"github.com/berachain/go-bonga/x/bonga/client/cli"
-	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 type IntegrationTestSuite struct {
@@ -1351,6 +1350,6 @@ func (s *IntegrationTestSuite) TestBlockResults() {
 			break
 		}
 
-		s.network.WaitForNextBlock() //nolint
+		s.network.WaitForNextBlock()
 	}
 }

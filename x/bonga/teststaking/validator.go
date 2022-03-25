@@ -5,10 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
+	"github.com/berachain/go-bonga/x/bonga/types"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-
-	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // NewValidator is a testing helper method to create validators in tests
