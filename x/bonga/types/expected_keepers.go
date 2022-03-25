@@ -6,10 +6,6 @@ import (
 )
 
 // DistributionKeeper expected distribution keeper (noalias)
-type DistributionKeeper interface {
-	GetFeePoolCommunityCoins(ctx sdk.Context) sdk.DecCoins
-	GetValidatorOutstandingRewardsCoins(ctx sdk.Context, val sdk.ValAddress) sdk.DecCoins
-}
 
 // AccountKeeper defines the expected account keeper (noalias)
 type AccountKeeper interface {
