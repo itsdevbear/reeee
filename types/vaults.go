@@ -20,14 +20,12 @@ type VaultI interface {
 	PreviewRedeem(uint256.Int) uint256.Int
 }
 
-// ValidatorSet expected properties for the set of all validators (noalias)
 type ValidatorVaultSet interface {
 	IterateVaults(sdk.Context, bongatypes.ValidatorI,
 		func(index int64, vault VaultI) (stop bool))
 
-	// iterate through the consensus validator set of the last block by operator address, execute func for each validator
 	IterateLastVaults(sdk.Context, bongatypes.ValidatorI,
 		func(index int64, vault VaultI) (stop bool))
 
-	Vault(sdk.Context, sdk.AccAddress) VaultI // get a particular vault by address
+	Vault(sdk.Context, sdk.AccAddress) VaultI
 }
