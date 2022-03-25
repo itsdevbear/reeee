@@ -12,17 +12,18 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/berachain/go-bonga/x/bonga/client/cli"
-	"github.com/berachain/go-bonga/x/bonga/client/rest"
-	"github.com/berachain/go-bonga/x/bonga/keeper"
-	"github.com/berachain/go-bonga/x/bonga/simulation"
-	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+
+	"github.com/berachain/go-bonga/x/bonga/client/cli"
+	"github.com/berachain/go-bonga/x/bonga/client/rest"
+	"github.com/berachain/go-bonga/x/bonga/keeper"
+	"github.com/berachain/go-bonga/x/bonga/simulation"
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 var (
@@ -76,7 +77,10 @@ func (AppModuleBasic) RegisterRESTRoutes(clientCtx client.Context, rtr *mux.Rout
 
 // RegisterGRPCGatewayRoutes registers the gRPC Gateway routes for the staking module.
 func (AppModuleBasic) RegisterGRPCGatewayRoutes(clientCtx client.Context, mux *runtime.ServeMux) {
-	types.RegisterQueryHandlerClient(context.Background(), mux, types.NewQueryClient(clientCtx))
+	err := types.RegisterQueryHandlerClient(context.Background(), mux, types.NewQueryClient(clientCtx))
+	if err != nil {
+		panic(err)
+	}
 }
 
 // GetTxCmd returns the root tx command for the staking module.
@@ -138,9 +142,6 @@ func (am AppModule) RegisterServices(cfg module.Configurator) {
 	types.RegisterMsgServer(cfg.MsgServer(), keeper.NewMsgServerImpl(am.keeper))
 	querier := keeper.Querier{Keeper: am.keeper}
 	types.RegisterQueryServer(cfg.QueryServer(), querier)
-
-	m := keeper.NewMigrator(am.keeper)
-	cfg.RegisterMigration(types.ModuleName, 1, m.Migrate1to2)
 }
 
 // InitGenesis performs genesis initialization for the staking module. It returns

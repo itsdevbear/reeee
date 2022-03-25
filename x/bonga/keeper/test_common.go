@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"math/rand"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // does a certain by-power index record exist

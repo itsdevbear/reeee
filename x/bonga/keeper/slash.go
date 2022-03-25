@@ -3,8 +3,9 @@ package keeper
 import (
 	"fmt"
 
-	types "github.com/berachain/go-bonga/x/bonga/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	types "github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // Slash a validator for an infraction committed at a known height

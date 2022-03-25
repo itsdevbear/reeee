@@ -6,11 +6,12 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // contains checks if the a given query contains one of the tx types

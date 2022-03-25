@@ -7,10 +7,11 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/berachain/go-bonga/x/bonga/keeper"
-	"github.com/berachain/go-bonga/x/bonga/types"
 	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"github.com/berachain/go-bonga/x/bonga/keeper"
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // InitGenesis sets the pool and parameters for the provided keeper.  For each
@@ -39,7 +40,10 @@ func InitGenesis(
 		keeper.SetValidator(ctx, validator)
 
 		// Manually set indices for the first time
-		keeper.SetValidatorByConsAddr(ctx, validator)
+		err := keeper.SetValidatorByConsAddr(ctx, validator)
+		if err != nil {
+			panic(err)
+		}
 		keeper.SetValidatorByPowerIndex(ctx, validator)
 
 		// Call the creation hook if not exported

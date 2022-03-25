@@ -10,9 +10,6 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/berachain/go-bonga/x/bonga/client/cli"
-	stakingtestutil "github.com/berachain/go-bonga/x/bonga/client/testutil"
-	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/crypto/hd"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
@@ -22,6 +19,10 @@ import (
 	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
 	"github.com/cosmos/cosmos-sdk/types/query"
 	"github.com/cosmos/cosmos-sdk/types/rest"
+
+	"github.com/berachain/go-bonga/x/bonga/client/cli"
+	stakingtestutil "github.com/berachain/go-bonga/x/bonga/client/testutil"
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 type IntegrationTestSuite struct {

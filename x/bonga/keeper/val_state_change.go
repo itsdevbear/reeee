@@ -8,8 +8,9 @@ import (
 	gogotypes "github.com/gogo/protobuf/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // BlockValidatorUpdates calculates the ValidatorUpdates for the current block

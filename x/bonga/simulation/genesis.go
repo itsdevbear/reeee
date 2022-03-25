@@ -8,10 +8,11 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/types/simulation"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // Simulation parameter constants

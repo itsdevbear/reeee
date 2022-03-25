@@ -1,5 +1,5 @@
 syntax = "proto3";
-package go_bonga.bonga.v1beta1;
+package bera.bonga.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";

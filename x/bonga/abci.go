@@ -5,10 +5,11 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/berachain/go-bonga/x/bonga/keeper"
-	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"github.com/berachain/go-bonga/x/bonga/keeper"
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // BeginBlocker will persist the current header and validator set as a historical entry

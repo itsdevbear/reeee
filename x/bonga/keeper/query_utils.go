@@ -1,8 +1,9 @@
 package keeper
 
 import (
-	"github.com/berachain/go-bonga/x/bonga/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // Return all validators that a delegator is bonded to. If maxRetrieve is supplied, the respective amount will be returned.

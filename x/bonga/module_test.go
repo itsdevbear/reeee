@@ -7,9 +7,10 @@ import (
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/simapp"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {

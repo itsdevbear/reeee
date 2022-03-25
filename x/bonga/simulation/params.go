@@ -6,9 +6,10 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // ParamChanges defines the parameters that can be modified by param change proposals

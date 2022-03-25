@@ -1,9 +1,10 @@
 package keeper
 
 import (
-	"github.com/berachain/go-bonga/x/bonga/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // GetBondedPool returns the bonded tokens pool's module account

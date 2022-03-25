@@ -6,8 +6,9 @@ package rest_test
 import (
 	"fmt"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 func (s *IntegrationTestSuite) TestLegacyGetValidators() {

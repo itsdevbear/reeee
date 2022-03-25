@@ -6,8 +6,9 @@ import (
 
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // get a single validator

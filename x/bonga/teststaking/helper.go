@@ -6,11 +6,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
+	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+
 	staking "github.com/berachain/go-bonga/x/bonga"
 	"github.com/berachain/go-bonga/x/bonga/keeper"
 	stakingtypes "github.com/berachain/go-bonga/x/bonga/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // Helper is a structure which wraps the staking handler

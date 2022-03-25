@@ -4,9 +4,10 @@ import (
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // GetTmConsPubKey gets the validator's public key as a tmcrypto.PubKey.

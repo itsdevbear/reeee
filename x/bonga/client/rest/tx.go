@@ -6,11 +6,12 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 func registerTxHandlers(clientCtx client.Context, r *mux.Router) {

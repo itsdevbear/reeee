@@ -3,12 +3,13 @@ package testutil
 import (
 	"fmt"
 
-	stakingcli "github.com/berachain/go-bonga/x/bonga/client/cli"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/testutil"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	stakingcli "github.com/berachain/go-bonga/x/bonga/client/cli"
 )
 
 var commonArgs = []string{

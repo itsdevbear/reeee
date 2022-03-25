@@ -1,8 +1,9 @@
 package keeper
 
 import (
-	"github.com/berachain/go-bonga/x/bonga/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"github.com/berachain/go-bonga/x/bonga/types"
 )
 
 // Implements StakingHooks interface
