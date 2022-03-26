@@ -1,0 +1,3 @@
+[submodule "solidity/lib/solmate"]
+	path = solidity/lib/solmate
+	url = https://github.com/rari-capital/solmate
