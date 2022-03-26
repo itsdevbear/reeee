@@ -1,3 +1,6 @@
 [submodule "solidity/lib/solmate"]
 	path = solidity/lib/solmate
 	url = https://github.com/rari-capital/solmate
+[submodule "solidity/lib/ds-test"]
+	path = solidity/lib/ds-test
+	url = https://github.com/dapphub/ds-test
