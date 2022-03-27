@@ -16,7 +16,6 @@ import (
 	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
 )
 
@@ -79,7 +78,7 @@ func TestSimulateMsgCreateValidator(t *testing.T) {
 	require.NoError(t, err)
 
 	var msg types.MsgCreateValidator
-	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg)
+	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg) //nolint
 
 	require.True(t, operationMsg.OK)
 	require.Equal(t, "0.080000000000000000", msg.Commission.MaxChangeRate.String())
@@ -116,7 +115,7 @@ func TestSimulateMsgEditValidator(t *testing.T) {
 	require.NoError(t, err)
 
 	var msg types.MsgEditValidator
-	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg)
+	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg) //nolint
 
 	require.True(t, operationMsg.OK)
 	require.Equal(t, "0.280623462081924936", msg.CommissionRate.String())
@@ -154,7 +153,7 @@ func TestSimulateMsgDelegate(t *testing.T) {
 	require.NoError(t, err)
 
 	var msg types.MsgDelegate
-	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg)
+	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg) //nolint
 
 	require.True(t, operationMsg.OK)
 	require.Equal(t, "cosmos1ghekyjucln7y67ntx7cf27m9dpuxxemn4c8g4r", msg.DelegatorAddress)
@@ -186,7 +185,7 @@ func TestSimulateMsgUndelegate(t *testing.T) {
 	delegator := accounts[1]
 	delegation := types.NewDelegation(delegator.Address, validator0.GetOperator(), issuedShares)
 	app.StakingKeeper.SetDelegation(ctx, delegation)
-	app.DistrKeeper.SetDelegatorStartingInfo(ctx, validator0.GetOperator(), delegator.Address, distrtypes.NewDelegatorStartingInfo(2, sdk.OneDec(), 200))
+	// app.DistrKeeper.SetDelegatorStartingInfo(ctx, validator0.GetOperator(), delegator.Address, distrtypes.NewDelegatorStartingInfo(2, sdk.OneDec(), 200))
 
 	setupValidatorRewards(app, ctx, validator0.GetOperator())
 
@@ -199,7 +198,7 @@ func TestSimulateMsgUndelegate(t *testing.T) {
 	require.NoError(t, err)
 
 	var msg types.MsgUndelegate
-	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg)
+	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg) //nolint
 
 	require.True(t, operationMsg.OK)
 	require.Equal(t, "cosmos1p8wcgrjr4pjju90xg6u9cgq55dxwq8j7u4x9a0", msg.DelegatorAddress)
@@ -234,7 +233,7 @@ func TestSimulateMsgBeginRedelegate(t *testing.T) {
 	delegator := accounts[2]
 	delegation := types.NewDelegation(delegator.Address, validator1.GetOperator(), issuedShares)
 	app.StakingKeeper.SetDelegation(ctx, delegation)
-	app.DistrKeeper.SetDelegatorStartingInfo(ctx, validator1.GetOperator(), delegator.Address, distrtypes.NewDelegatorStartingInfo(2, sdk.OneDec(), 200))
+	//app.DistrKeeper.SetDelegatorStartingInfo(ctx, validator1.GetOperator(), delegator.Address, distrtypes.NewDelegatorStartingInfo(2, sdk.OneDec(), 200))
 
 	setupValidatorRewards(app, ctx, validator0.GetOperator())
 	setupValidatorRewards(app, ctx, validator1.GetOperator())
@@ -248,7 +247,7 @@ func TestSimulateMsgBeginRedelegate(t *testing.T) {
 	require.NoError(t, err)
 
 	var msg types.MsgBeginRedelegate
-	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg)
+	types.ModuleCdc.UnmarshalJSON(operationMsg.Msg, &msg) //nolint
 
 	require.True(t, operationMsg.OK)
 	require.Equal(t, "cosmos12gwd9jchc69wck8dhstxgwz3z8qs8yv67ps8mu", msg.DelegatorAddress)
@@ -316,11 +315,11 @@ func getTestingValidator(t *testing.T, app *simapp.SimApp, ctx sdk.Context, acco
 }
 
 func setupValidatorRewards(app *simapp.SimApp, ctx sdk.Context, valAddress sdk.ValAddress) {
-	decCoins := sdk.DecCoins{sdk.NewDecCoinFromDec(sdk.DefaultBondDenom, sdk.OneDec())}
-	historicalRewards := distrtypes.NewValidatorHistoricalRewards(decCoins, 2)
-	app.DistrKeeper.SetValidatorHistoricalRewards(ctx, valAddress, 2, historicalRewards)
-	// setup current revards
-	currentRewards := distrtypes.NewValidatorCurrentRewards(decCoins, 3)
-	app.DistrKeeper.SetValidatorCurrentRewards(ctx, valAddress, currentRewards)
+	// decCoins := sdk.DecCoins{sdk.NewDecCoinFromDec(sdk.DefaultBondDenom, sdk.OneDec())}
+	// historicalRewards := distrtypes.NewValidatorHistoricalRewards(decCoins, 2)
+	// app.DistrKeeper.SetValidatorHistoricalRewards(ctx, valAddress, 2, historicalRewards)
+	// // setup current revards
+	// currentRewards := distrtypes.NewValidatorCurrentRewards(decCoins, 3)
+	// app.DistrKeeper.SetValidatorCurrentRewards(ctx, valAddress, currentRewards)
 
 }
