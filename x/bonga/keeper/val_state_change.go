@@ -140,7 +140,7 @@ func (k Keeper) ApplyAndReturnValidatorSetUpdates(ctx sdk.Context) (updates []ab
 		}
 
 		// if we get to a zero-power validator (which we don't bond),
-		// there are no more possible bonded validators
+		// there are no more possible bonded vxalidators
 		if validator.PotentialConsensusPower(k.PowerReduction(ctx)) == 0 {
 			break
 		}

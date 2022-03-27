@@ -1,0 +1,1075 @@
+{
+  "_format": "ethers-rs-sol-cache-2",
+  "files": {
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1648266941849,
+      "contentHash": "5d45a46528eaf8a26f0a8d93669f3148",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.23",
+      "artifacts": {
+        "DSTest": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/mixins/ERC4626.sol": {
+      "lastModificationDate": 1648266930579,
+      "contentHash": "199b3ae20cd6ac4434c3f459cdd1c7b0",
+      "sourceName": "lib/solmate/src/mixins/ERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC4626": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "ERC4626.sol/ERC4626.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/test/utils/DSTestPlus.sol": {
+      "lastModificationDate": 1648266930581,
+      "contentHash": "6af71d1a807ec87f0754de2b1fc19980",
+      "sourceName": "lib/solmate/src/test/utils/DSTestPlus.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/solmate/src/test/utils/Hevm.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "DSTestPlus": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "DSTestPlus.sol/DSTestPlus.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/test/utils/Hevm.sol": {
+      "lastModificationDate": 1648266930582,
+      "contentHash": "60742aa83f930a4226fbe7676f06b607",
+      "sourceName": "lib/solmate/src/test/utils/Hevm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Hevm": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "Hevm.sol/Hevm.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/test/utils/mocks/MockERC20.sol": {
+      "lastModificationDate": 1648266930582,
+      "contentHash": "8cec77cb7dcd2d03e318bc0916a925f3",
+      "sourceName": "lib/solmate/src/test/utils/mocks/MockERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "MockERC20": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "MockERC20.sol/MockERC20.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/test/utils/mocks/MockERC4626.sol": {
+      "lastModificationDate": 1648266930582,
+      "contentHash": "1e11a504dee96cf1fd4240fa268ab00f",
+      "sourceName": "lib/solmate/src/test/utils/mocks/MockERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "MockERC4626": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "MockERC4626.sol/MockERC4626.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1648266930583,
+      "contentHash": "95ac3ff5640ab4a57dc4cdc2992e79c0",
+      "sourceName": "lib/solmate/src/tokens/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC20": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/tokens/WETH.sol": {
+      "lastModificationDate": 1648266930583,
+      "contentHash": "2733bec88cad581f6c741648867c56be",
+      "sourceName": "lib/solmate/src/tokens/WETH.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "WETH": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "WETH.sol/WETH.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/utils/FixedPointMathLib.sol": {
+      "lastModificationDate": 1648266930584,
+      "contentHash": "5d62867f7d9345aa3670871e21c327a7",
+      "sourceName": "lib/solmate/src/utils/FixedPointMathLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "FixedPointMathLib": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "FixedPointMathLib.sol/FixedPointMathLib.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/utils/SafeCastLib.sol": {
+      "lastModificationDate": 1648266930584,
+      "contentHash": "680ddfaaf8d1e494b52a29e6d4dba604",
+      "sourceName": "lib/solmate/src/utils/SafeCastLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "SafeCastLib": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "SafeCastLib.sol/SafeCastLib.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/lib/solmate/src/utils/SafeTransferLib.sol": {
+      "lastModificationDate": 1648266930584,
+      "contentHash": "19f4ba71d9e7171381e98bb29608ea3a",
+      "sourceName": "lib/solmate/src/utils/SafeTransferLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "SafeTransferLib": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "SafeTransferLib.sol/SafeTransferLib.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/ERC4626Router.sol": {
+      "lastModificationDate": 1648269525975,
+      "contentHash": "3aa4ba1a6a9d90f30991c200d6c0a531",
+      "sourceName": "src/ERC4626Router.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/ERC4626RouterBase.sol",
+        "src/external/Multicall.sol",
+        "src/external/PeripheryPayments.sol",
+        "src/external/SelfPermit.sol",
+        "src/external/interfaces/IERC20PermitAllowed.sol",
+        "src/external/interfaces/IMulticall.sol",
+        "src/external/interfaces/ISelfPermit.sol",
+        "src/interfaces/IERC4626.sol",
+        "src/interfaces/IERC4626Router.sol",
+        "src/interfaces/IERC4626RouterBase.sol"
+      ],
+      "versionRequirement": "=0.8.12",
+      "artifacts": {
+        "ERC4626Router": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "ERC4626Router.sol/ERC4626Router.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/ERC4626RouterBase.sol": {
+      "lastModificationDate": 1648268793201,
+      "contentHash": "aa09640012fd9d216496a6548610d798",
+      "sourceName": "src/ERC4626RouterBase.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/external/Multicall.sol",
+        "src/external/PeripheryPayments.sol",
+        "src/external/SelfPermit.sol",
+        "src/external/interfaces/IERC20PermitAllowed.sol",
+        "src/external/interfaces/IMulticall.sol",
+        "src/external/interfaces/ISelfPermit.sol",
+        "src/interfaces/IERC4626.sol",
+        "src/interfaces/IERC4626RouterBase.sol"
+      ],
+      "versionRequirement": "=0.8.12",
+      "artifacts": {
+        "ERC4626RouterBase": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "ERC4626RouterBase.sol/ERC4626RouterBase.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/external/Multicall.sol": {
+      "lastModificationDate": 1648268725264,
+      "contentHash": "69f7fb1178ebe9607e0cc9436fdfc387",
+      "sourceName": "src/external/Multicall.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/external/interfaces/IMulticall.sol"
+      ],
+      "versionRequirement": ">=0.7.6",
+      "artifacts": {
+        "Multicall": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "Multicall.sol/Multicall.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/external/PeripheryPayments.sol": {
+      "lastModificationDate": 1648268725284,
+      "contentHash": "3d913ef1139dd00dd1d6020d40724d6d",
+      "sourceName": "src/external/PeripheryPayments.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": ">=0.7.5",
+      "artifacts": {
+        "IWETH9": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "PeripheryPayments.sol/IWETH9.json"
+        },
+        "PeripheryPayments": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "PeripheryPayments.sol/PeripheryPayments.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/external/SelfPermit.sol": {
+      "lastModificationDate": 1648268725296,
+      "contentHash": "5728ea2ee0bd508b62f8314f574f007b",
+      "sourceName": "src/external/SelfPermit.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/external/interfaces/IERC20PermitAllowed.sol",
+        "src/external/interfaces/ISelfPermit.sol"
+      ],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "SelfPermit": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "SelfPermit.sol/SelfPermit.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/external/interfaces/IERC20PermitAllowed.sol": {
+      "lastModificationDate": 1648268725234,
+      "contentHash": "45d978c9fdeba4c8f57995ff50262018",
+      "sourceName": "src/external/interfaces/IERC20PermitAllowed.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IERC20PermitAllowed": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "IERC20PermitAllowed.sol/IERC20PermitAllowed.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/external/interfaces/IMulticall.sol": {
+      "lastModificationDate": 1648268725237,
+      "contentHash": "ea3154493f6e3ba717008923f5d3f6c9",
+      "sourceName": "src/external/interfaces/IMulticall.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.5",
+      "artifacts": {
+        "IMulticall": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "IMulticall.sol/IMulticall.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/external/interfaces/ISelfPermit.sol": {
+      "lastModificationDate": 1648268719390,
+      "contentHash": "cd85fc65cc2a4288ec46c94965ffbb9a",
+      "sourceName": "src/external/interfaces/ISelfPermit.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.5",
+      "artifacts": {
+        "ISelfPermit": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "ISelfPermit.sol/ISelfPermit.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/interfaces/IERC4626.sol": {
+      "lastModificationDate": 1648268793201,
+      "contentHash": "68f02bd1806b4754fc3517c779c3e198",
+      "sourceName": "src/interfaces/IERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.12",
+      "artifacts": {
+        "IERC4626": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "IERC4626.sol/IERC4626.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/interfaces/IERC4626Router.sol": {
+      "lastModificationDate": 1648268793201,
+      "contentHash": "28536eeca69d417526cdb8eac9518e60",
+      "sourceName": "src/interfaces/IERC4626Router.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/interfaces/IERC4626.sol"
+      ],
+      "versionRequirement": "=0.8.12",
+      "artifacts": {
+        "IERC4626Router": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "IERC4626Router.sol/IERC4626Router.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/interfaces/IERC4626RouterBase.sol": {
+      "lastModificationDate": 1648268793201,
+      "contentHash": "146553bedce9bd0714e77a9bca7c849e",
+      "sourceName": "src/interfaces/IERC4626RouterBase.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/interfaces/IERC4626.sol"
+      ],
+      "versionRequirement": "=0.8.12",
+      "artifacts": {
+        "IERC4626RouterBase": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "IERC4626RouterBase.sol/IERC4626RouterBase.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/test/ERC4626Router.t.sol": {
+      "lastModificationDate": 1648268793287,
+      "contentHash": "298d7efba9c3a15338af66ec44a2a0a2",
+      "sourceName": "src/test/ERC4626Router.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/test/utils/DSTestPlus.sol",
+        "lib/solmate/src/test/utils/Hevm.sol",
+        "lib/solmate/src/test/utils/mocks/MockERC20.sol",
+        "lib/solmate/src/test/utils/mocks/MockERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/tokens/WETH.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/ERC4626Router.sol",
+        "src/ERC4626RouterBase.sol",
+        "src/external/Multicall.sol",
+        "src/external/PeripheryPayments.sol",
+        "src/external/SelfPermit.sol",
+        "src/external/interfaces/IERC20PermitAllowed.sol",
+        "src/external/interfaces/IMulticall.sol",
+        "src/external/interfaces/ISelfPermit.sol",
+        "src/interfaces/IERC4626.sol",
+        "src/interfaces/IERC4626Router.sol",
+        "src/interfaces/IERC4626RouterBase.sol"
+      ],
+      "versionRequirement": "=0.8.12",
+      "artifacts": {
+        "Assume": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "ERC4626Router.t.sol/Assume.json"
+        },
+        "ERC4626Test": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "ERC4626Router.t.sol/ERC4626Test.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/test/mocks/MockERC4626.sol": {
+      "lastModificationDate": 1648268793288,
+      "contentHash": "ab5b0695823f39f580b4336f34cc12e8",
+      "sourceName": "src/test/mocks/MockERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.12",
+      "artifacts": {
+        "MockERC4626": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "MockERC4626.sol/MockERC4626.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/test/mocks/MockxERC4626.sol": {
+      "lastModificationDate": 1648268719405,
+      "contentHash": "4d6715b2d1666fd2a2bf09cf5dd7884a",
+      "sourceName": "src/test/mocks/MockxERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/xERC4626.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "MockxERC4626": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "MockxERC4626.sol/MockxERC4626.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/test/utils/Console.sol": {
+      "lastModificationDate": 1648268725760,
+      "contentHash": "c7059711e8a00c9a31df10468d2d25c2",
+      "sourceName": "src/test/utils/Console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "console": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "Console.sol/console.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/test/xERC4626.t.sol": {
+      "lastModificationDate": 1648268793287,
+      "contentHash": "d94e2c7313ca560587eb305a8791f902",
+      "sourceName": "src/test/xERC4626.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/test/utils/DSTestPlus.sol",
+        "lib/solmate/src/test/utils/Hevm.sol",
+        "lib/solmate/src/test/utils/mocks/MockERC20.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/test/mocks/MockxERC4626.sol",
+        "src/xERC4626.sol"
+      ],
+      "versionRequirement": "=0.8.12",
+      "artifacts": {
+        "xERC4626Test": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "xERC4626.t.sol/xERC4626Test.json"
+        }
+      }
+    },
+    "/Users/pez/BeraChain/bera-workspace/go-bonga/solidity/src/xERC4626.sol": {
+      "lastModificationDate": 1648269105800,
+      "contentHash": "ee546a354e7fe42571c694c12150f0c2",
+      "sourceName": "src/xERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "xERC4626": {
+          "0.8.12+commit.f00d7308.Darwin.appleclang": "xERC4626.sol/xERC4626.json"
+        }
+      }
+    }
+  }
+}

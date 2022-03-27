@@ -9,6 +9,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
+	stakingcli "github.com/berachain/go-bonga/x/bonga/client/cli"
+	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/simapp"
@@ -16,8 +18,6 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	stakingcli "github.com/cosmos/cosmos-sdk/x/staking/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
 
 	"github.com/berachain/go-bonga/x/genutil/client/cli"
 )
