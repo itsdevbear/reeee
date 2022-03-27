@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"math/rand"
 
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 
@@ -20,13 +21,15 @@ import (
 	"github.com/berachain/go-bonga/x/bonga/client/cli"
 	"github.com/berachain/go-bonga/x/bonga/client/rest"
 	"github.com/berachain/go-bonga/x/bonga/keeper"
+	"github.com/berachain/go-bonga/x/bonga/simulation"
 	"github.com/berachain/go-bonga/x/bonga/types"
+	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 )
 
 var (
-	_ module.AppModule      = AppModule{}
-	_ module.AppModuleBasic = AppModuleBasic{}
-	// _ module.AppModuleSimulation = AppModule{}
+	_ module.AppModule           = AppModule{}
+	_ module.AppModuleBasic      = AppModuleBasic{}
+	_ module.AppModuleSimulation = AppModule{}
 )
 
 // AppModuleBasic defines the basic application module used by the staking module.
@@ -174,29 +177,29 @@ func (am AppModule) EndBlock(ctx sdk.Context, _ abci.RequestEndBlock) []abci.Val
 
 // AppModuleSimulation functions
 
-// // GenerateGenesisState creates a randomized GenState of the staking module.
-// func (AppModule) GenerateGenesisState(simState *module.SimulationState) {
-// 	simulation.RandomizedGenState(simState)
-// }
+// GenerateGenesisState creates a randomized GenState of the staking module.
+func (AppModule) GenerateGenesisState(simState *module.SimulationState) {
+	simulation.RandomizedGenState(simState)
+}
 
-// // ProposalContents doesn't return any content functions for governance proposals.
-// func (AppModule) ProposalContents(simState module.SimulationState) []simtypes.WeightedProposalContent {
-// 	return nil
-// }
+// ProposalContents doesn't return any content functions for governance proposals.
+func (AppModule) ProposalContents(simState module.SimulationState) []simtypes.WeightedProposalContent {
+	return nil
+}
 
-// // RandomizedParams creates randomized staking param changes for the simulator.
-// func (AppModule) RandomizedParams(r *rand.Rand) []simtypes.ParamChange {
-// 	return simulation.ParamChanges(r)
-// }
+// RandomizedParams creates randomized staking param changes for the simulator.
+func (AppModule) RandomizedParams(r *rand.Rand) []simtypes.ParamChange {
+	return simulation.ParamChanges(r)
+}
 
-// // RegisterStoreDecoder registers a decoder for staking module's types
-// func (am AppModule) RegisterStoreDecoder(sdr sdk.StoreDecoderRegistry) {
-// 	sdr[types.StoreKey] = simulation.NewDecodeStore(am.cdc)
-// }
+// RegisterStoreDecoder registers a decoder for staking module's types
+func (am AppModule) RegisterStoreDecoder(sdr sdk.StoreDecoderRegistry) {
+	sdr[types.StoreKey] = simulation.NewDecodeStore(am.cdc)
+}
 
-// // WeightedOperations returns the all the staking module operations with their respective weights.
-// func (am AppModule) WeightedOperations(simState module.SimulationState) []simtypes.WeightedOperation {
-// 	return simulation.WeightedOperations(
-// 		simState.AppParams, simState.Cdc, am.accountKeeper, am.bankKeeper, am.keeper,
-// 	)
-// }
+// WeightedOperations returns the all the staking module operations with their respective weights.
+func (am AppModule) WeightedOperations(simState module.SimulationState) []simtypes.WeightedOperation {
+	return simulation.WeightedOperations(
+		simState.AppParams, simState.Cdc, am.accountKeeper, am.bankKeeper, am.keeper,
+	)
+}

@@ -8,9 +8,9 @@ package keeper_test
 // 	abci "github.com/tendermint/tendermint/abci/types"
 // 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-// 	"github.com/berachain/go-bonga/x/bonga/keeper"
-// 	"github.com/berachain/go-bonga/x/bonga/teststaking"
-// 	"github.com/berachain/go-bonga/x/bonga/types"
+// 	"github.com/berachain/go-bonga/custom/bonga/keeper"
+// 	"github.com/berachain/go-bonga/custom/bonga/teststaking"
+// 	"github.com/berachain/go-bonga/custom/bonga/types"
 // 	"github.com/cosmos/cosmos-sdk/codec"
 // 	"github.com/berachain/bera-simapp/simapp"
 // 	sdk "github.com/cosmos/cosmos-sdk/types"

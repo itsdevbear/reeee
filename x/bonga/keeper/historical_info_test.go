@@ -6,8 +6,8 @@ package keeper_test
 // 	"github.com/stretchr/testify/require"
 // 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-// 	"github.com/berachain/go-bonga/x/bonga/teststaking"
-// 	"github.com/berachain/go-bonga/x/bonga/types"
+// 	"github.com/berachain/go-bonga/custom/bonga/teststaking"
+// 	"github.com/berachain/go-bonga/custom/bonga/types"
 // 	"github.com/berachain/bera-simapp/simapp"
 // 	sdk "github.com/cosmos/cosmos-sdk/types"
 // )

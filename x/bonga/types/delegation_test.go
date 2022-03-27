@@ -7,7 +7,7 @@ package types_test
 
 // 	"github.com/stretchr/testify/require"
 
-// 	"github.com/berachain/go-bonga/x/bonga/types"
+// 	"github.com/berachain/go-bonga/custom/bonga/types"
 // 	"github.com/cosmos/cosmos-sdk/codec"
 // 	sdk "github.com/cosmos/cosmos-sdk/types"
 // )
