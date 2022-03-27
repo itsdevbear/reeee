@@ -11,7 +11,7 @@ package keeper_test
 // 	"github.com/berachain/go-bonga/x/bonga/keeper"
 // 	"github.com/berachain/go-bonga/x/bonga/types"
 // 	"github.com/cosmos/cosmos-sdk/baseapp"
-// 	"github.com/cosmos/cosmos-sdk/simapp"
+// 	"github.com/berachain/bera-simapp/simapp"
 // 	sdk "github.com/cosmos/cosmos-sdk/types"
 // )
 

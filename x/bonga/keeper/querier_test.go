@@ -12,7 +12,7 @@ package keeper_test
 // 	"github.com/berachain/go-bonga/x/bonga/teststaking"
 // 	"github.com/berachain/go-bonga/x/bonga/types"
 // 	"github.com/cosmos/cosmos-sdk/codec"
-// 	"github.com/cosmos/cosmos-sdk/simapp"
+// 	"github.com/berachain/bera-simapp/simapp"
 // 	sdk "github.com/cosmos/cosmos-sdk/types"
 // )
 

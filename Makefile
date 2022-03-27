@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-SIMAPP = ./simapp
+SIMAPP = ../bera-simapp/simapp
 BINDIR ?= $(GOPATH)/bin
 
 PACKAGES_SIMTEST=$(shell go list ./... | grep '/simulation')
