@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/berachain/go-bonga/simapp"
-	"github.com/berachain/go-bonga/simapp/helpers"
-	simappparams "github.com/berachain/go-bonga/simapp/params"
+	"github.com/berachain/bera-simapp/simapp"
+	"github.com/berachain/bera-simapp/simapp/helpers"
+	simappparams "github.com/berachain/bera-simapp/simapp/params"
 	staking "github.com/berachain/go-bonga/x/bonga"
 	stakingtypes "github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/berachain/go-bonga/x/genutil"

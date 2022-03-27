@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/berachain/go-bonga/simapp"
+	"github.com/berachain/bera-simapp/simapp"
 	stakingtypes "github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
