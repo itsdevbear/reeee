@@ -8,16 +8,16 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
+	"github.com/berachain/go-bonga/simapp"
+	"github.com/berachain/go-bonga/simapp/helpers"
+	simappparams "github.com/berachain/go-bonga/simapp/params"
+	staking "github.com/berachain/go-bonga/x/bonga"
 	stakingtypes "github.com/berachain/go-bonga/x/bonga/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/simapp/helpers"
-	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-
 	"github.com/berachain/go-bonga/x/genutil"
 	"github.com/berachain/go-bonga/x/genutil/types"
+	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 )
 
 var (

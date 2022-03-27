@@ -9,11 +9,11 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
+	"github.com/berachain/go-bonga/simapp"
 	stakingcli "github.com/berachain/go-bonga/x/bonga/client/cli"
 	"github.com/berachain/go-bonga/x/bonga/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/simapp"
 	"github.com/cosmos/cosmos-sdk/testutil"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	sdk "github.com/cosmos/cosmos-sdk/types"
