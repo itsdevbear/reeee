@@ -9,10 +9,10 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
+	"github.com/berachain/bera-simapp/simapp"
 	"github.com/berachain/go-bonga/x/bonga/simulation"
 	"github.com/berachain/go-bonga/x/bonga/teststaking"
 	"github.com/berachain/go-bonga/x/bonga/types"
-	"github.com/cosmos/cosmos-sdk/simapp"
 	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
